@@ -1,0 +1,285 @@
+@import "./scss/variables";
+@import "./scss/mixins";
+
+/********** VARIABLE **************/
+$gauche: #E6E6CF;
+$textcap: #A6A66C;
+$parcour: #538080;
+
+
+/********** MIXIN **************/
+@mixin colorblue ($color){
+    color: $parcour;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/********** NAV **************/
+.nav {background-color: $blue;}
+
+
+
+.nav-link {color: $indigo;}
+
+/********** CV **************/
+.grid-containerCV{
+    display: grid;
+    grid-template-columns: 300px 300px; 
+    grid-template-rows: 300px 300px 300px 300px; 
+    
+    gap: 10px;
+}
+
+.col_gauche{
+    
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: $gauche;
+}
+
+img{margin: 15px 70px 15px 70px;
+    
+}
+
+.adobe{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.logiciel2{
+    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: black;
+    color: white;
+    ul{padding: 3px;
+        li{margin: 2px;}
+    }
+}
+
+.parcours{
+    
+    grid-column: 2/4;
+    grid-row: 2/5;
+    padding: 5px;
+}
+
+h2{margin: 10px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@include colorblue(h2);}
+
+h5{color: $textcap;}
+
+
+ul li{
+    list-style: none;
+}
+
+.btn{
+    padding: 5px;
+    margin-top: 5px;
+}
+
+h4{color: $parcour;}
+
+
+
+.black{
+    color: black;
+    }
+
+p{
+    margin-left: 20px;
+}
+
+
+
+
+
+/********** HEADER TITRE **************/
+h1 {color:$indigo;}
+
+
+
+
+/********** GIRD TEMPLATE **************/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    
+    gap: 10px;
+    
+} 
+
+
+
+.item1 {border: 1px solid red;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    padding: 10px 0px 0px 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+    
+
+
+.item2 {border: 1px solid rgb(0, 153, 255);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+    padding: 10px 0px 0px 10px;
+    background-color: $primary;
+    border-radius: 5px;
+}
+
+.item3 {border: 1px solid rgb(255, 196, 0);
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 10px 0px 0px 10px;
+    flex-direction: column;
+    background-color: $warning;
+    border-radius: 5px;
+}
+
+.item4 {border: 1px solid rgb(195, 255, 0);
+    grid-row-start: 2;
+    grid-row-end: 4;
+    padding: 5px 5px 0px 5px;
+    background-color: $success;
+    border-radius: 5px;
+}
+
+.item5 {border: 1px solid rgb(15, 212, 159);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    padding: 5px 0px 5px 5px;
+    display: flex;
+    background-color: $info;
+    border-radius: 5px;
+}
+
+.item6 {border: 1px solid rgb(188, 30, 85);
+    padding: 0px 0px 0px 0px;
+    background-color: $secondary;
+    border-radius: 5px;
+}
+
+.item7 {border: 1px solid rgb(188, 30, 85);
+    padding: 0px 0px 0px 0px;
+    background-color: $light;
+    border-radius: 5px;
+    grid-column: 2/5;
+    grid-row: 3 / 5;
+}
+
+.item8 {border: 1px solid rgb(188, 30, 85);
+    padding: 0px 0px 0px 0px;
+    background-color: $light;
+    border-radius: 5px;
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+
+.news {padding-left: 5px;
+    text-decoration-line: underline ;
+    text-decoration-color: rgb(232, 23, 72);
+}
+
+.nom{line-height: 1px;
+    padding-left: 5px;
+}
+
+.snake {margin-top: 10px;}
+
+.totem {margin-top: 10px;}
+
+.monkey {margin-top: 10px;}
+
+
+.reclame {border: 1px solid green;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
+/**********     GRID AREA ************/
+
+
+
+.grid-container2{
+    display: grid;
+    grid-template-areas: 
+    "I I I"
+    "M I3 I4"
+    "I5 I5 I5";
+    gap: 5px;
+}
+
+
+.item10{
+    grid-area: I;
+}
+
+.menu{
+    grid-area: M;
+    margin-right: 25px;
+}
+
+.directionl{
+    width: 100px;
+    margin: auto;
+
+}
+
+/**ul li{
+    background-color: darkkhaki;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+}**/
+
+.item11{
+    grid-area: I3;
+}
+
+.item12{
+    grid-area: I4;
+    text-align: center;
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+
+.item13{
+    grid-area: I5;
+    background-color: darkslategrey;
+    padding: 5px;
+    color: white;
+}
+
+.products{
+    display: flex;
+    background-color: coral;
+    padding: 5px;
+}
+
+.products > *{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}
