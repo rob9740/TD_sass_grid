@@ -12,7 +12,7 @@ $parcour: #538080;
     color: $parcour;
 }
 
-
+/********** BODY **************/
 body{
     margin: 0px;
     padding: 0px;
@@ -106,110 +106,77 @@ h1 {color:$indigo;}
 
 
 
-/********** GIRD TEMPLATE **************/
-
+/**********     GRID 1 ************/
 .grid-container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
-    
-    gap: 10px;
-    
-} 
-
-
-
-.item1 {border: 1px solid red;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    display: flex;
-    padding: 10px 0px 0px 10px;
-    background-color: antiquewhite;
-    border-radius: 5px;
-}
-    
-
-
-.item2 {border: 1px solid rgb(0, 153, 255);
-    grid-column-start: 4;
-    grid-column-end: 6;
-    display: flex;
-    padding: 10px 0px 0px 10px;
-    background-color: $primary;
-    border-radius: 5px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    border: 1px solid black;
 }
 
-.item3 {border: 1px solid rgb(255, 196, 0);
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    padding: 10px 0px 0px 10px;
-    flex-direction: column;
-    background-color: $warning;
-    border-radius: 5px;
-}
-
-.item4 {border: 1px solid rgb(195, 255, 0);
-    grid-row-start: 2;
-    grid-row-end: 4;
-    padding: 5px 5px 0px 5px;
-    background-color: $success;
-    border-radius: 5px;
-}
-
-.item5 {border: 1px solid rgb(15, 212, 159);
+.box1 {
     grid-column-start: 2;
-    grid-column-end: 5;
-    padding: 5px 0px 5px 5px;
-    display: flex;
-    background-color: $info;
-    border-radius: 5px;
-}
-
-.item6 {border: 1px solid rgb(188, 30, 85);
-    padding: 0px 0px 0px 0px;
-    background-color: $secondary;
-    border-radius: 5px;
-}
-
-.item7 {border: 1px solid rgb(188, 30, 85);
-    padding: 0px 0px 0px 0px;
-    background-color: $light;
-    border-radius: 5px;
-    grid-column: 2/5;
-    grid-row: 3 / 5;
-}
-
-.item8 {border: 1px solid rgb(188, 30, 85);
-    padding: 0px 0px 0px 0px;
-    background-color: $light;
-    border-radius: 5px;
-    grid-column-start: 5;
-    grid-column-end: 7;
-}
-
-
-.news {padding-left: 5px;
-    text-decoration-line: underline ;
-    text-decoration-color: rgb(232, 23, 72);
-}
-
-.nom{line-height: 1px;
-    padding-left: 5px;
-}
-
-.snake {margin-top: 10px;}
-
-.totem {margin-top: 10px;}
-
-.monkey {margin-top: 10px;}
-
-
-.reclame {border: 1px solid green;
-    text-align: center;
+    grid-column-end: 3;
+    
     
 }
+
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    
+    
+}
+
+.box3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    
+    
+}
+
+.box4 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+   
+    
+}
+
+.box5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+    
+}
+
+
+/**********     GRID 2 ************/
+.grid-container2 {
+    display: flex;
+    flex-flow:row wrap;
+    
+    margin-top: 30px;
+    border: 1px solid black;
+}
+
+
+
+.coffret {border: 1px solid red;
+   
+}
+
+
+/**********     page SASS ************/
+.text{background-color: #CFD8D7;}
+
+.bloxflex {display: flex;
+    justify-content: space-around;
+    
+    margin-top: 10px;
+}
+
+.align {align-items:flex-end;}
+
 
 
 
@@ -247,12 +214,7 @@ h1 {color:$indigo;}
 
 }
 
-/**ul li{
-    background-color: darkkhaki;
-    margin: 5px;
-    padding: 5px;
-    list-style: none;
-}**/
+
 
 .item11{
     grid-area: I3;
