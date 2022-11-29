@@ -97,6 +97,37 @@ p{
 }
 
 
+/********** PAGE SASS **************/
+
+.bordeaux {display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+
+.lyon {display: flex;
+    justify-content: space-between;
+    
+    margin-top: 20px;
+}
+
+.info {border: 1px solid red;}
+
+.forme {margin: 5px 5px;}
+
+
+.entre {margin: 10px;}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,7 +142,7 @@ h1 {color:$indigo;}
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px;
     grid-template-rows: 200px 200px 200px 200px 200px;
-    border: 1px solid black;
+    background: linear-gradient(to top, #538080, white,);
 }
 
 .box1 {
@@ -150,32 +181,15 @@ h1 {color:$indigo;}
 }
 
 
-/**********     GRID 2 ************/
-.grid-container2 {
-    display: flex;
-    flex-flow:row wrap;
-    
-    margin-top: 30px;
-    border: 1px solid black;
-}
 
 
 
-.coffret {border: 1px solid red;
-   
-}
 
 
-/**********     page SASS ************/
-.text{background-color: #CFD8D7;}
 
-.bloxflex {display: flex;
-    justify-content: space-around;
-    
-    margin-top: 10px;
-}
 
-.align {align-items:flex-end;}
+
+
 
 
 
