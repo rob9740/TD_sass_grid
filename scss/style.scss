@@ -72,7 +72,9 @@ h2{margin: 10px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 @include colorblue(h2);}
 
-h5{color: $textcap;}
+h5{color: $textcap;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 h3 {font-size: 30px;}
 
@@ -202,8 +204,7 @@ h1 {color:$indigo;}
 
 
 
-/**********     GRID AREA ************/
-
+/**********     GRID AREA 
 
 
 .grid-container2{
@@ -261,4 +262,4 @@ h1 {color:$indigo;}
     margin: 5px;
     padding: 5px;
     border: 1px solid black;
-}
+}************/

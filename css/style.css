@@ -65,6 +65,7 @@ h2 {
 
 h5 {
   color: #A6A66C;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h3 {
@@ -155,55 +156,64 @@ h1 {
   grid-column-end: 3;
 }
 
-/**********     GRID AREA ************/
-.grid-container2 {
-  display: grid;
-  grid-template-areas: "I I I" "M I3 I4" "I5 I5 I5";
-  gap: 5px;
+/**********     GRID AREA 
+
+
+.grid-container2{
+    display: grid;
+    grid-template-areas: 
+    "I I I"
+    "M I3 I4"
+    "I5 I5 I5";
+    gap: 5px;
 }
 
-.item10 {
-  grid-area: I;
+
+.item10{
+    grid-area: I;
 }
 
-.menu {
-  grid-area: M;
-  margin-right: 25px;
+.menu{
+    grid-area: M;
+    margin-right: 25px;
 }
 
-.directionl {
-  width: 100px;
-  margin: auto;
+.directionl{
+    width: 100px;
+    margin: auto;
+
 }
 
-.item11 {
-  grid-area: I3;
+
+
+.item11{
+    grid-area: I3;
 }
 
-.item12 {
-  grid-area: I4;
-  text-align: center;
-  padding: 10px;
-  background-color: cornflowerblue;
+.item12{
+    grid-area: I4;
+    text-align: center;
+    padding: 10px;
+    background-color: cornflowerblue;
 }
 
-.item13 {
-  grid-area: I5;
-  background-color: darkslategrey;
-  padding: 5px;
-  color: white;
+.item13{
+    grid-area: I5;
+    background-color: darkslategrey;
+    padding: 5px;
+    color: white;
 }
 
-.products {
-  display: flex;
-  background-color: coral;
-  padding: 5px;
+.products{
+    display: flex;
+    background-color: coral;
+    padding: 5px;
 }
 
-.products > * {
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid black;
-}
+.products > *{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+}************/
 
 /*# sourceMappingURL=style.css.map */
